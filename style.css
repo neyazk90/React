@@ -1,0 +1,84 @@
+@import url(app.css);
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px #ddd;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #ddd;
+    align-items: center;
+}
+.header .header__logo{
+    font-size: 30px;
+    font-family: sf-bold;
+}
+.header .header__search input{
+    height: 34px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.header > .header__navbar > .header__menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.header > .header__navbar > .header__menu .header__menu__item {
+ padding: 0 15px;
+} 
+.header > .header__navbar > .header__menu .header__menu__item a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Card */
+.card{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    width: 25%;
+    margin-bottom: 15px;
+ 
+}
+.card__rating{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #57cb7b;
+    color: #fff;
+    padding: 3px 5px;
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+}
+.card__img__thumbnail{
+   overflow: hidden;
+}
+.card .card__image{
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+.card .card__image:hover{
+       transform: scale(1.3);
+}
+.card__info{
+  padding: 15px;
+}
+.card .card__title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.card .card__cuisines{
+    color: #9e9e9e;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.card .card__lastmile{
+    color: #9e9e9e;
+    font-size: 12px;
+}
+.card .card__lastmile span{
+   font-size: 14px;
+}
