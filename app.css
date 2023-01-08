@@ -1,0 +1,69 @@
+@font-face {
+    font-family: sf-regular;
+    src: url('assets/fonts/SFProDisplay-Regular.woff');
+}
+@font-face {
+    font-family: sf-bold;
+    src: url('assets/fonts/SFProDisplay-Bold.woff');
+}
+@font-face {
+    font-family: sf-semi-bold;
+    src: url('assets/fonts/SFProDisplay-Semibold.woff');
+}
+
+body,h1 ,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    font-family: sf-regular;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #1b1919;
+}
+:root{
+    
+}
+
+.bold{
+    font-family: sf-bold;
+}
+.semi-bold{
+    font-family: sf-semi-bold;
+}
+
+
+.d-flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-around{
+    justify-content: space-around;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
