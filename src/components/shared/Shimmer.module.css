@@ -1,0 +1,12 @@
+.shimmer .card{
+    width: 33%;
+    border-radius: 5px;
+}
+.shimmer .card__img__thumbnail{
+    background-color: #ddd;
+    height:150px
+}
+.shimmer .card .card__info{
+    height: 70px;
+    background-color: #fff;
+}

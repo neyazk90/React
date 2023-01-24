@@ -30,15 +30,21 @@
     text-decoration: none;
     color: #000;
 }
-
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.main{
+    height: 70vh;
+}
 /* Card */
 .card{
     border: 1px solid #ddd;
     border-radius: 5px;
     position: relative;
-    width: 25%;
+    width: 33%;
     margin-bottom: 15px;
- 
+    text-decoration: none;
 }
 .card__rating{
     position: absolute;
@@ -82,3 +88,46 @@
 .card .card__lastmile span{
    font-size: 14px;
 }
+
+/* Form */
+.input-group{
+    position: relative;
+}
+.btn{
+    display: inline-block;
+    border: 0;
+}
+.btn--search{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -32px;
+    padding: 0 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #57cb7c;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+.form-control{
+    width: 100%;
+    border-radius: 3px;
+    padding: 15px;
+    color: #545050;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 4px #ddd;
+}
+.shimmer .card{
+    width: 33%;
+    border-radius: 5px;
+}
+.shimmer .card__img__thumbnail{
+    background-color: #ddd;
+    height:150px
+}
+.shimmer .card .card__info{
+    height: 70px;
+    background-color: #fff;
+}
+   
