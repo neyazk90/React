@@ -20,16 +20,11 @@ const Body = () => {
  
 
     const searchHandler = () => {
-        console.log('hhh')
-
         const filteredData = searchItem(searchText, allRestaurants);
         setfilterRestaurant(filteredData)
     }
-    // console.log(' latitude, ', latitude, 'longititude', longititude)
-
     useEffect(() => {
         if (latitude && longititude) {
-            console.log('inner')
             getRestaurant();
         }
     }, [latitude, longititude])
@@ -37,7 +32,6 @@ const Body = () => {
     const getRestaurant = async () => {
         const data = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longititude}&page_type=DESKTOP_WEB_LISTING`);
         const json = await data.json()
-        console.log(json?.data?.cards[2]?.data?.data?.cards)
         setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
         setfilterRestaurant(json?.data?.cards[2]?.data?.data?.cards);
     }

@@ -1,4 +1,4 @@
-const RestaurantCard = ({ cloudinaryImageId, name, cuisines, minDeliveryTime, avgRating }) => {
+const RestaurantCard = ({ cloudinaryImageId, name, cuisines, minDeliveryTime, costForTwoString, avgRating }) => {
     
     return (
         <>
@@ -12,6 +12,7 @@ const RestaurantCard = ({ cloudinaryImageId, name, cuisines, minDeliveryTime, av
                 <div className="card__title">{name}</div>
                 <div className="card__cuisines">{cuisines.join(', ')}</div>
                 <div className="card__lastmile">Min. Delivery Time: <span> {minDeliveryTime}</span></div>
+                <div className="card__lastmile">Cost For Two {costForTwoString}</div>
             </div>
         </>
     )

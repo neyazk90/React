@@ -1,19 +1,10 @@
-import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { useFetchRestaurant } from './shared/hooks/useFetchRestaurant'
 
 const RestaurantDetails = () => {
     const { restaurantId } = useParams();
-    const [restaurantDetail, setRestaurantDetail] = useState(null);
+    const restaurantDetail  = useFetchRestaurant(restaurantId);
 
-    useEffect(() => {
-        getRestaurantDetail()
-    },[])
-
-    const getRestaurantDetail = async () => {
-        const dd = await fetch(`https://www.swiggy.com/dapi/menu/v4/full?lat=28.6992317&lng=77.0703152&menuId=${restaurantId}`);
-        const restaurantdetails = await dd.json();
-        setRestaurantDetail(restaurantdetails.data);
-    }
     return (
         <div className="container">
             <h1 className="title">{restaurantDetail?.name}</h1>
